@@ -1,277 +1,87 @@
-html {
-    margin: 0;
-    padding: 0;
-}
 body {
-    font-family: 'Handlee', cursive;
-    font-size: 13pt;
-    background-color: #ffffff;
-    padding: 10px;
-    margin: 0;
-}
-h1 {
-    font-size: 15pt;
-    color: #20bcd5;
-    text-align: center;
-    padding: 18px 0 18px 0;
-    margin: 0 0 10px 0;
-}
-h1 span {
-    border: 4px dashed #20bcd5;
-    padding: 10px;
-}
-p {
-    padding: 0;
-    margin: 0;
-}
-.img-circle {
-    border: 3px solid white;
-    border-radius: 50%;
-}
-.section {
-    background-color: #fff;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-}
-#header {
-    background-image: url("https://www.sololearn.com/Uploads/header.jpg");
-    background-size: cover;
-}
-#header img {
-    display: block;
-    width: 80px;
-    height: 80px;
-    margin: auto;
-}
-#header p {
-    font-size: 25pt;
-    color: #3b464c;
-    padding-top: 5px;
-    margin: 0;
-    font-weight: bold;
-    text-align: center;
-}
-.quote {
-    font-size: 12pt;
-    text-align: right;
-    margin-top: 10px;
-}
-table {
-    width: 100%;
-    font-size: 11pt;
-}
-table, th, td {
-    border: 2px solid #cecece;
-    border-collapse: collapse;
-    text-align: center;
-    table-layout: fixed;
-}
-.selected {
-    background-color: #f36f48;
-    font-weight: bold;
-    color: white;
-}
-li {
-    margin-bottom: 15px;
-    font-weight: bold;
-}
-progress {
-    width: 70%;
-    height: 20px;
-    color: #3fb6b2;
-    background: #efefef;
-}
-progress::-webkit-progress-bar {
-    background: #efefef;
-}
-progress::-webkit-progress-value {
-    background: #3fb6b2;
-} 
-progress::-moz-progress-bar {
-    color: #3fb6b2;
-    background: #efefef;
-}
-iframe, audio {
-    display: block;
-    margin: 0 auto;
-    border: 3px solid #3fb6b2;
-}
-hr {
-    border: 0;
-    height: 1px;
-    background: #f36f48;
-}
-form {
-    text-align: center;
-    margin-top: 0;
-}
-.submit {
-    background-color: #3fb6b2;
-    padding: 12px 45px;
-    border-radius: 5px;
-    cursor: pointer;
-    color: #ffffff;
-    border: none;
-    outline: none;
-    margin: 0;
-    font-weight: bold;
-}
-.submit:hover {
-    background-color: #43a09d;
-}
-textarea {
-    height: 100px;
-}
-input, textarea {
-    margin-bottom: 10px;
-    font-size: 11pt;
-    padding: 15px 10px 10px;
-    border: 1px solid #cecece;
-    background-color: #efefef;
-    color: #787575;
-    border-radius: 5px;
-    width: 70%;
-    outline: none;
-}
-.face {
-    transform: scale(0.4);
-    margin: 0 auto;
-    display: block;
-    margin-top: -35px;
-    margin-bottom: -25px;
-}
-#contacts img {
-    height: 50px;
-    width: 50px;
-    margin-left: 7px;
-    margin-right: 7px;
-}
-#contacts a {
-    text-decoration: none;
-}
-#contacts img:hover {
-    opacity: 0.8;
-}
-#contacts {
-    text-align: center;
-}
-.copyright {
-    font-size: 8pt;
-    text-align: right;
-    padding-bottom: 10px;
-    color: grey;
-}
 
-
-
-  background-color: #fff;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-
-
-
-/*Now the CSS*/
-* {margin: 0px 0px 10px; padding: 15px; background-color: #fff}
-
-.tree ul {
-	padding-top: 20px; position: relative;
 	
-	transition: all 0.5s;
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
+	background: #ffffff;
+	font-size: 15pt;
+
 }
 
-.tree li {
-	float: left; text-align: center;
-	list-style-type: none;
-	position: relative;
-	padding: 20px 5px 0 5px;
+
+
+
+/*--- navigation bar ---*/
+
+.navbar {
+  background:#0000CC ;
 	
-	transition: all 0.5s;
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
 }
 
-/*We will use ::before and ::after to draw the connectors*/
-
-.tree li::before, .tree li::after{
-	content: '';
-	position: absolute; top: 0; right: 50%;
-	border-top: 1px solid #ccc;
-	width: 50%; height: 20px;
-}
-.tree li::after{
-	right: auto; left: 50%;
-	border-left: 1px solid #ccc;
+.nav-link,
+.navbar-brand {
+  color: #fff;
+  cursor: pointer;
 }
 
-/*We need to remove left-right connectors from elements without 
-any siblings*/
-.tree li:only-child::after, .tree li:only-child::before {
-	display: none;
+.nav-link {
+  margin-right: 1em !important;
+	text-align: center;
 }
 
-/*Remove space from the top of single children*/
-.tree li:only-child{ padding-top: 0;}
 
-/*Remove left connector from first child and 
-right connector from last child*/
-.tree li:first-child::before, .tree li:last-child::after{
-	border: 0 none;
-}
-/*Adding back the vertical connector to the last nodes*/
-.tree li:last-child::before{
-	border-right: 1px solid #ccc;
-	border-radius: 0 5px 0 0;
-	-webkit-border-radius: 0 5px 0 0;
-	-moz-border-radius: 0 5px 0 0;
-}
-.tree li:first-child::after{
-	border-radius: 5px 0 0 0;
-	-webkit-border-radius: 5px 0 0 0;
-	-moz-border-radius: 5px 0 0 0;
+.nav-link:hover {
+  color: #000;
 }
 
-/*Time to add downward connectors from parents*/
-.tree ul ul::before{
-	content: '';
-	position: absolute; top: 0; left: 50%;
-	border-left: 1px solid #ccc;
-	width: 0; height: 20px;
+.navbar-collapse {
+  justify-content: flex-end;
 }
 
-.tree li a{
-	border: 1px solid #ccc;
-	padding: 5px 10px;
-	text-decoration: none;
-	color: #666;
-	font-family: arial, verdana, tahoma;
-	font-size: 11px;
-	display: inline-block;
+
+
+/*--- navigation bar ---*/
+.container{
 	
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
+	text-align: justify;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
 	
-	transition: all 0.5s;
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
+		
 }
 
-/*Time for some hover effects*/
-/*We will apply the hover effect the the lineage of the element also*/
-.tree li a:hover, .tree li a:hover+ul li a {
-	background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
-}
-/*Connector styles on hover*/
-.tree li a:hover+ul li::after, 
-.tree li a:hover+ul li::before, 
-.tree li a:hover+ul::before, 
-.tree li a:hover+ul ul::before{
-	border-color:  #94a0b4;
+.chart{
+	padding: inherit;
 }
 
-/*Thats all. I hope you enjoyed it.
-Thanks :)*/
+
+/*--Button--*/
+.btn-group .button {
+  background-color: #4CAF50; /* Green */
+  border: 1px solid green;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  float: center;
+}
+
+.btn-group .button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+  background-color: #3e8e41;
+}
+
+/*--Button End--*/
+
+/*--Links--*/
+
+#under{
+	color: darkgray;
+	text-align: center;
+}
